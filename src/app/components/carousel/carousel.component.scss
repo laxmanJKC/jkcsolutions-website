@@ -1,0 +1,92 @@
+.pt-80 {
+    padding-top: 80px;
+}
+
+.carousel {
+    & .banner-image {
+        position: relative;
+    }
+    & .banner-image img {
+        position: absolute
+    }
+    & .banner-image img:first-child {
+        z-index: 3;
+        top: -130px;
+        left: -45px
+    }
+   &  .banner-image img:nth-child(2) {
+        right: 145px;
+        top: -287px;
+    }
+    
+   &  .banner-image img:nth-child(3) {
+        left: 25px;
+        top: -20px
+    }
+    
+   &  .banner-image img:nth-child(4) {
+        right: 12%;
+        top: 118px;
+        z-index: 1
+    }
+    
+   &  .banner-image img:nth-child(5) {
+        left: 28%;
+        top: -120px;
+        z-index: 2
+    }
+    
+   &  .banner-image img:nth-child(6) {
+        right: 35%;
+        z-index: 1;
+        top: -150px
+    }
+    
+   &  .banner-image img:nth-child(7) {
+        right: 20px;
+        top: -110px
+    }
+    
+   &  .banner-image img:nth-child(8) {
+        right: 25px;
+        top: -140px
+    }
+    
+   &  .banner-image img:nth-child(9) {
+        right: 30%;
+        z-index: 1;
+        top: -35px
+    }
+    
+   &  .banner-image img:nth-child(10) {
+        left: 37%;
+        top: -28px;
+        z-index: 1
+    }
+    
+   &  .banner-image img:nth-child(11) {
+        left: 37%;
+        top: -160px;
+        z-index: 1
+    }
+    
+   &  .banner-image img:nth-child(12) {
+        left: 90px;
+        top: -110px
+    }
+    
+   &  .banner-image img:nth-child(13) {
+        left: 56%;
+        top: -25px;
+        z-index: 2
+    }
+    
+   &  .banner-image img:nth-child(14) {
+        right: 105px;
+        top: -28px
+    }
+    
+   &  .banner-image img:last-child {
+        display: none
+    }    
+}

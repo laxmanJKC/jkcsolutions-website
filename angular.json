@@ -35,9 +35,16 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/scss/bootstrap.scss"
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/remixicon/fonts/remixicon.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js",
+              "src/jkcsolutions.js"
+            ]
           },
           "configurations": {
             "production": {
