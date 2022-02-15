@@ -14,13 +14,13 @@ import { CareerComponent } from 'src/app/pages/career/career.component';
 
 export const WebsiteLayoutRoutes: Routes = [
   // tslint:disable-next-line: max-line-length
-  {path: '', component: HomeComponent, data: {title: 'WeBoxApps - Business Solutions | DevOps | Cloud Solutions | Web Hosting | Odoo ERP | CICD | AWS | Digital Marketing | Development', content: 'weboxapp, Weboxapps, DevOps, Continous Deployment, Cloud Solutions, Cloud Services, Cloud Support, Web Hosting, Digital Marketing, Outsourcing, Cloud Hosting, Web Development, Odoo Supports, Odoo Development, Odoo ERP, Odoo CRM, Odoo CMS, Email Marketing, Open Source'}},
+  {path: '', component: HomeComponent, data: {title: 'JKC Solutions - IT Consulting | Staffing Solutions | Software Development | Software Testing | Software Training'}},
 
-  {path: 'home',  component: HomeComponent},
+  {path: 'home',  component: HomeComponent, data: {title: 'JKC Solutions - IT Consulting | Staffing Solutions | Software Development | Software Testing | Software Training'}},
   // tslint:disable-next-line: max-line-length
-  {path: 'career', component: CareerComponent, data: {}},
+  {path: 'career', component: CareerComponent, data: {title: 'JKC Solutions - Career | Job Seeker | Job Opportunity'}},
   // tslint:disable-next-line: max-line-length
-  {path: 'contact-us', component: ContactComponent, data: {title: 'WeBoxApps - Business Solutions | DevOps | Cloud Solutions | Web Hosting | Odoo ERP | CICD | AWS | Digital Marketing | Development', content: 'weboxapp, Weboxapps, DevOps, Continous Deployment, Cloud Solutions, Cloud Services, Cloud Support, Web Hosting, Digital Marketing, Outsourcing, Cloud Hosting, Web Development, Odoo Supports, Odoo Development, Odoo ERP, Odoo CRM, Odoo CMS, Email Marketing, Open Source'}},
+  {path: 'contact-us', component: ContactComponent, data: {title: 'JKC Solutions - Business Solutions | DevOps | Cloud Solutions | Web Hosting | Odoo ERP | CICD | AWS | Digital Marketing | Development', content: 'weboxapp, Weboxapps, DevOps, Continous Deployment, Cloud Solutions, Cloud Services, Cloud Support, Web Hosting, Digital Marketing, Outsourcing, Cloud Hosting, Web Development, Odoo Supports, Odoo Development, Odoo ERP, Odoo CRM, Odoo CMS, Email Marketing, Open Source'}},
   // tslint:disable-next-line: max-line-length
   {path: 'web-development', component: WebDevelopmentComponent, data: {title: 'JKC Solutions - Web Design | Web Development', content: 'weboxapp, Weboxapps, Web Design, Web Development, Go Live, Web Developer, Bootstrap, Material Design, Website, Domain, Web Hosting, Cloud Hosting, Responsive Web Design, Chat Bot'}},
   // tslint:disable-next-line: max-line-length
