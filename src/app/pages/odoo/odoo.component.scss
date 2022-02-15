@@ -1,0 +1,63 @@
+#odoo-feature {
+    padding-top: 140px;
+}
+
+.feature-icon i {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+    width: 26px;
+    height: 26px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(-49%,-85%);
+}
+
+.app-features-wrap .single-feature-box {
+    margin-top: 40px;
+    padding: 38px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 12px 35px 0 rgba(0,0,0,.07);
+    transition: all .3s ease-in-out;
+}
+
+.app-features-wrap .single-feature-box .feature-icon {
+    color: #fff;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.app-features-wrap .single-feature-box .feature-icon span {
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%,-50%);
+}
+
+.app-features-wrap .single-feature-box {
+    margin-top: 40px;
+    padding: 38px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 12px 35px 0 rgba(0,0,0,.07);
+    transition: all .3s ease-in-out;
+}
+
+.app-features-wrap .single-feature-box p {
+    margin-top: 13px;
+}
+
+.app-features-wrap .single-feature-box:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}

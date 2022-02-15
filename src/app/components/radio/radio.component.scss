@@ -1,0 +1,42 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+$sample_index_1: radio_1;
+##{$sample_index_1} .switch {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none;
+    font-weight: 900;
+    padding-right: 20px;
+    &:after {
+        font-family: 'Font Awesome 5 Free';
+        display: inline-block;
+        text-align: center;
+        font-size: 40px;
+        content: attr(data-icon);
+        padding: 8px 12px;
+        border-radius: 15px;
+        color: rgba(0,0,0,.4);
+        transition: box-shadow 1s, color 1s;
+    }
+    
+    &:checked {
+        &:after {
+            box-shadow: 2px 2px 14px rgba(0,0,0,.4);
+            color: #dc3545;
+        }
+    }
+}
+
+.section-padding-140-0 {
+    padding-top: 140px;
+    padding-bottom: 0;
+    padding-left: 150px;
+}
+
+.section-padding-140-40 {
+    padding-top: 140px;
+    padding-bottom: 40px;
+    padding-left: 250px;
+}

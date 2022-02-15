@@ -36,7 +36,7 @@
             "styles": [
               "src/styles.scss",
               "node_modules/animate.css/animate.min.css",
-              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
               "node_modules/aos/dist/aos.css",
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/remixicon/fonts/remixicon.css"
@@ -51,13 +51,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "4mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "5mb"
                 }
               ],
               "fileReplacements": [

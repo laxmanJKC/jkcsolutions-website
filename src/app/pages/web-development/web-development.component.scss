@@ -1,0 +1,79 @@
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+.section-padding-100-50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section-heading {
+    margin-bottom: 70px;
+    margin-top: 32px;
+}
+
+.single-feature-area:hover {
+    -webkit-box-shadow: 0 8px 60px 0 rgba(103, 151, 255, .15), 0 12px 90px 0 rgba(103, 151, 255, .10);
+    box-shadow: 0 8px 60px 0 rgba(103, 151, 255, .15), 0 12px 90px 0 rgba(103, 151, 255, .10);
+}
+.single-feature-area {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.15);
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.15);
+    padding: 30px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.single-feature-area:hover .feature-icon {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background-color: #1fbec6;
+}
+.single-feature-area .feature-icon {
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 73% 27% 38% 62%/40% 43% 57% 60%;
+    line-height: 100px;
+    text-align: center;
+    display: inline-block;
+    -webkit-box-shadow: 0 4px 24px 0 rgba(103, 151, 255, .15), 0 12px 64px 0 rgba(103, 151, 255, .15);
+    box-shadow: 0 4px 24px 0 rgba(103, 151, 255, .15), 0 12px 64px 0 rgba(103, 151, 255, .15);
+    -webkit-transition-duration: 600ms;
+    -o-transition-duration: 600ms;
+    transition-duration: 600ms;
+}
+
+.single-feature-area:hover .feature-icon i {
+    color: #fff;
+}
+
+.single-feature-area .feature-icon i {
+    color: #1fbec6;
+}
+
+.single-feature-area:hover::after {
+    width: 100%;
+}
+
+.single-feature-area::after {
+    position: absolute;
+    z-index: 22;
+    content: "";
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color: #1fbec6;
+}

@@ -1,15 +1,11 @@
-import { Component } from '@angular/core';
-import { BaseurlService } from './services/baseurl.service';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'jkcsolutions-website';
-
-  constructor(private baseurlService: BaseurlService) {
-    console.log("base href url:"+this.baseurlService.getBaseHref());
-  }
+  title = 'weboxapps';
 }

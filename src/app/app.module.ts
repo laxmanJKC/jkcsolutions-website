@@ -1,29 +1,20 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {APP_BASE_HREF, PlatformLocation} from '@angular/common';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { WebsiteLayoutModule } from './layouts/website/website-layout.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    CarouselComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WebsiteLayoutModule
   ],
-  providers: [
-    {
-      provide: APP_BASE_HREF,
-      useFactory: (s: PlatformLocation) => s.getBaseHrefFromDOM(),
-      deps: [PlatformLocation]
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
