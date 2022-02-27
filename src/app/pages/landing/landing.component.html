@@ -1,6 +1,5 @@
 <section class="hero hero-lead pb-50" id="hero">
     <div class="hero-cotainer">
-    <div class="hero-bg"> <img src="https://landing.zytheme.com/ladidapp/assets/images/background/bg-hero.svg" alt="Background Image"></div>
     <div class="container">
     <div class="row">
     <div class="col-12 col-lg-6">
@@ -8,8 +7,7 @@
     <div class="card-alert">        <h1 class="body hero-headline">
         SEEKING SOLVERS.</h1></div>
     <p class="hero-bio">
-        Analytics is thinking, thinking requires information and this information leads to success with JKC IT
-Solutions. Come be a part of JKC IT Solutions.
+        JKC IT Solutions, Inc. is one of the fastest growing IT Consulting and Services company to provide key Information Technology solutions to our diverse clients. 
     </p>
     <div class="hero-action">
         <a class="btn btn--primary" [routerLink]="['/', 'staffing-consulting']">
@@ -21,7 +19,7 @@ Solutions. Come be a part of JKC IT Solutions.
     </div>
     <div class="col-12 col-lg-6">
     <div class="hero-image">
-        <img class="img-fluid" src="https://landing.zytheme.com/ladidapp/assets/images/mockup/iphone.png" alt="iPhone Mockup">
+        <img class="img-fluid" :src="{{ getHref() + '../assets/img/hero-header.png'}}" alt="iPhone Mockup">
     </div>
     </div>
     </div>

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import Typed from 'typed.js';
+import { Component, OnInit, ViewEncapsulation, Inject } from '@angular/core';
+import {APP_BASE_HREF} from '@angular/common';
 
 @Component({
   selector: 'app-landing',
@@ -9,7 +9,7 @@ import Typed from 'typed.js';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(APP_BASE_HREF) public baseHref: String) { }
 
   ngOnInit(): void {
     /*const typed = new Typed('#typeId', {
@@ -27,6 +27,10 @@ export class LandingComponent implements OnInit {
       loop: true,
       fadeOut: false
     });*/
+  }
+
+  public getHref(): String {
+    return this.baseHref;
   }
 
 }

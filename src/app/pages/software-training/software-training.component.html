@@ -1,0 +1,72 @@
+<div class="container" >
+    <div class="row align-items-center pt-5 h-100 justify-content-center">
+      <div class="col-md-9 col-xxl-5 text-center">
+        <h1 class="fs-4 fs-md-5 fs-xxl-4"  style="transform: translate(0px, 0px); opacity: 1;">UpSkill with Software Training</h1>
+        <p class="fs-1" style="transform: translate(0px, 0px); opacity: 1;">JKC IT Solutions constantly update on the industry requirement on latest technology training with our thought process which enables accelerated learning for the participant.</p>
+      </div>
+    </div>
+  </div>
+<section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 col-lg-7 text-lg-center">
+            <img class="img-fluid mb-5 mb-md-0" :src="{{ getHref() + '../assets/img/2.png'}}" alt="">
+        </div>
+        <div class="col-md-7 col-lg-5 text-center text-md-start">
+          <h2>We Provide <br>Software Training</h2>
+          <p> You can explore the Software Training Courses</p>
+          <div class="d-flex"><svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+            </svg>
+            <p class="ms-2">We provide training with advanced training content.</p>
+          </div>
+          <div class="d-flex"><svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+            </svg>
+            <p class="ms-2">Get equip with latest technologies and tools.</p>
+          </div>
+          <div class="d-flex"><svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+            </svg>
+            <p class="ms-2">Our training sessions are very interactive, practical and encourage discussions.</p>
+          </div>
+          <div class="d-flex"><svg class="bi bi-check-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2FAB73" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+            </svg>
+            <p class="ms-2">Experience with the Real-time scenarios.</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- end of .container-->
+  </section>
+
+<section id="customers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center display-5 fw-semi-bold position-relative"  style="transform: translate(0px, 0px); opacity: 1;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Software Training Courses</font></font></h1>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6 col-lg-4 column">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Course Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let course of getCourses(); index as i">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{course}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        
+      </div>
+    </div><!-- end of .container-->
+  </section>

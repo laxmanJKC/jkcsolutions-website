@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+$gohub-box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+.services-card-shadow {
+    -webkit-box-shadow: $gohub-box-shadow !important;
+    box-shadow: $gohub-box-shadow !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+@media (min-width: 1200px) {
+h2, .h2 {
+    font-size: 2.369rem;
+}
+}
+
+.lh-base {
+    line-height: 1.45 !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}

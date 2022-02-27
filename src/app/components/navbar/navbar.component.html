@@ -6,22 +6,22 @@
         <img class="logo logo-dark" src="https://jkcit-d317d.web.app/logo.png" alt="JKC Solutions Logo" width="44" height="44">
         <img class="logo logo-light" src="https://jkcit-d317d.web.app/logo.png" alt="JKC Solutions Logo" width="44" height="44">
       </a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarContent">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" (click)="open()"><span class="navbar-toggler-icon" ></span></button>
+      <div class="collapse navbar-collapse" id="navbarContent" [ngClass]="isOpen ? 'display-block' : 'display-none'">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item" [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact: true}">
+          <li class="nav-item" (click)="open()" [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact: true}">
             <a class="nav-link" [routerLink]="['/', 'home']">Home</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+          <li class="nav-item" (click)="open()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
             <a class="nav-link" data-scroll="scrollTo" routerLink="." fragment="services">Services</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['active']">
+          <li class="nav-item" (click)="open()" [routerLinkActive]="['active']">
             <a class="nav-link" data-scroll="scrollTo" [routerLink]="['/','career']">Career</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['active']">
+          <li class="nav-item" (click)="open()" [routerLinkActive]="['active']">
             <a class="nav-link" data-scroll="scrollTo" [routerLink]="['/','about-us']">About US</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['active']">
+          <li class="nav-item" (click)="open()" [routerLinkActive]="['active']">
             <a class="nav-link" data-scroll="scrollTo" [routerLink]="['/','contact-us']">Contact US</a>
           </li>
         </ul>

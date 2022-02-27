@@ -8,9 +8,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  public isOpen: Boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public open(): void {
+    console.log(this.isOpen);
+    this.isOpen = !this.isOpen;
   }
 
 }

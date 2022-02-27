@@ -21,6 +21,10 @@ import { RadioComponent } from 'src/app/components/radio/radio.component';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { StaffingConsultingComponent } from 'src/app/pages/staffing-consulting/staffing-consulting.component';
 import { CareerComponent } from 'src/app/pages/career/career.component';
+import { SoftwareDevelopmentComponent } from 'src/app/pages/software-development/software-development.component';
+import { SoftwareTestingComponent } from 'src/app/pages/software-testing/software-testing.component';
+import { ItConsultingComponent } from 'src/app/pages/it-consulting/it-consulting.component';
+import { SoftwareTrainingComponent } from 'src/app/pages/software-training/software-training.component';
 
 
 @NgModule({
@@ -47,7 +51,11 @@ import { CareerComponent } from 'src/app/pages/career/career.component';
      CheckboxComponent,
      RadioComponent,
      StaffingConsultingComponent,
-     CareerComponent
+     CareerComponent,
+     SoftwareDevelopmentComponent,
+     SoftwareTestingComponent,
+     ItConsultingComponent,
+     SoftwareTrainingComponent
  ],
  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
  exports: [WebsiteLayoutComponent]
